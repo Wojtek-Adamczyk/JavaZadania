@@ -12,7 +12,6 @@ public abstract class Animal implements sellable, Feedable, Ownable
     Boolean isAlive;
     Human owner;
 
-
     public Animal(String species)
     {
         isAlive = true;
@@ -21,7 +20,7 @@ public abstract class Animal implements sellable, Feedable, Ownable
         else if (species.equals("chonky boi")) {weight = 14.0;}
     }
 
-    //void feed(Double foodWeight){}
+    void feed(Double foodWeight) {}
 
     public void feed()
     {
@@ -32,6 +31,7 @@ public abstract class Animal implements sellable, Feedable, Ownable
         }
         else System.out.println("Uśmierciłeś pieseczka i teraz nie żyje");
     }
+
     public void takeForAWalk() {takeForAWalk(DEFAULT_DISTANCE);}
     public void takeForAWalk(Integer distance) {this.takeForAWalk(distance, DEFAULT_RUN);}
 
@@ -50,6 +50,7 @@ public abstract class Animal implements sellable, Feedable, Ownable
         }
         else System.out.println("Chodzenie z martwym psem na smyczy jest lekko... dziwne");
     }
+
     public void feed(Integer foodWeight)
     {
         if (weight > 0)
@@ -61,6 +62,7 @@ public abstract class Animal implements sellable, Feedable, Ownable
 
         System.out.println("feed(Integer)");
     }
+
     public String toString() {return species + ", " + name + ", " + weight + "kg, a żyje? " + isAlive;}
 
     @Override

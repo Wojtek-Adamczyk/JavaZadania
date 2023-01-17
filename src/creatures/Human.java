@@ -26,12 +26,14 @@ public class Human extends Animal
         this.yearOfBirth = yearOfBirth;
         this.cash = cash;
     }
+
     public void displayHuman()
     {
         System.out.println("Imie: " + firstName);
         System.out.println("Nazwisko: " + lastName);
         System.out.println("Rok urodzenia: " + yearOfBirth);
     }
+
     public void displayPet()
     {
         if (!(pet == null))
@@ -41,6 +43,7 @@ public class Human extends Animal
         }
         else {System.out.println("Nie masz zwierzaczków");}
     }
+
     public void displayCar()
     {
         if (!(car == null))
@@ -50,6 +53,7 @@ public class Human extends Animal
         }
         else {System.out.println("Nie masz samochodu");}
     }
+
     public void setSalary(Double salary)
     {
         if (salary < 0) {System.out.println("Nowo przypisana wypłata jest ujemna - nie można jej zmienić");}
@@ -64,18 +68,21 @@ public class Human extends Animal
             this.salary = salary;
         }
     }
+
     public void getInformationAboutSalary()
     {
         System.out.println("Wypłata została zmieniona " + DataTimeForm.format(localDate));
         System.out.println("Poprzednia wypłata wynosiła $" + previousSalary);
         System.out.println("Obecna wypłata to $" + salary);
     }
+
     public void setCar(Car car)
     {
         if (salary > car.value) {System.out.println("udało ci się kupić autko za pienią$ki"); this.car = car;}
         else if (salary > car.value/12) {System.out.println("Jest autko ale jest ten kredycik"); this.car = car;}
         else {System.out.println("Nie stać cie na samochód, biedaaaku");}
     }
+
     public void setPurchasedCar (Car car)
     {
         if (car.isSold) {this.car = car;}
@@ -90,5 +97,4 @@ public class Human extends Animal
 
     public Car getCar () {return this.car;}
     public String toString() {return firstName + " " + lastName + " " + yearOfBirth;}
-
 }

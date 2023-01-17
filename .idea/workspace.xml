@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49584ca1-b43c-44cd-8d30-da652d64eb1c" name="Changes" comment="">
+    <list default="true" id="49584ca1-b43c-44cd-8d30-da652d64eb1c" name="Changes" comment="javka zadania 1-12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/Edbile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Edbile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/FarmAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/Feedable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Feedable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/Ownable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Ownable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creatures/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creatures/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/CarWash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/CarWash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/sellable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/sellable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +44,14 @@
       <option name="presentableId" value="Default" />
       <updated>1673964923476</updated>
     </task>
+    <task id="LOCAL-00001" summary="javka zadania 1-12">
+      <created>1673969201749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673969201749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,5 +64,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="javka zadania 1-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="javka zadania 1-12" />
   </component>
 </project>

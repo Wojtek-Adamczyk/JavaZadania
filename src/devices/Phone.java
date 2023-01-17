@@ -57,6 +57,7 @@ public class Phone extends Device implements sellable
 
         System.out.println("Zakończono");
     }
+
     void installAnnApp(List<String> list) {for (String name : list) {this.installAnnApp(name);}}
 
     void installAnnApp(URL url) {System.out.println("Pobrano aplikacje z adresu URL");}
