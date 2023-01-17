@@ -1,2 +1,7 @@
-package creatures;public class Ownable {
+package creatures;
+
+public interface Ownable
+{
+    Human getOwner();
+    Boolean isOwned();
 }
