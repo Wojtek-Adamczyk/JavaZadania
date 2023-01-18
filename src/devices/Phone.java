@@ -19,7 +19,6 @@ public class Phone extends Device implements sellable
         this.memory = memory;
     }
 
-    public String toString(){return model + ", " + producer + ", $" + value + ", " + memory;}
 
     @Override
     public void turnOn() {System.out.println("Telefon jest włączony");}
@@ -59,6 +58,6 @@ public class Phone extends Device implements sellable
     }
 
     void installAnnApp(List<String> list) {for (String name : list) {this.installAnnApp(name);}}
-
     void installAnnApp(URL url) {System.out.println("Pobrano aplikacje z adresu URL");}
+    public String toString(){return model + ", " + producer + ", $" + value + ", " + memory;}
 }

@@ -1,5 +1,4 @@
 package creatures;
-
 import devices.sellable;
 
 public abstract class Animal implements sellable, Feedable, Ownable
@@ -20,8 +19,6 @@ public abstract class Animal implements sellable, Feedable, Ownable
         else if (species.equals("chonky boi")) {weight = 14.0;}
     }
 
-    void feed(Double foodWeight) {}
-
     public void feed()
     {
         if (weight > 0)
@@ -32,8 +29,10 @@ public abstract class Animal implements sellable, Feedable, Ownable
         else System.out.println("Uśmierciłeś pieseczka i teraz nie żyje");
     }
 
+    public String toString() {return species + ", " + name + ", " + weight + "kg, a żyje? " + isAlive;}
     public void takeForAWalk() {takeForAWalk(DEFAULT_DISTANCE);}
     public void takeForAWalk(Integer distance) {this.takeForAWalk(distance, DEFAULT_RUN);}
+    void feed(Double foodWeight) {}
 
     public void takeForAWalk(Integer distance, Boolean areWeRunning)
     {
@@ -62,8 +61,6 @@ public abstract class Animal implements sellable, Feedable, Ownable
 
         System.out.println("feed(Integer)");
     }
-
-    public String toString() {return species + ", " + name + ", " + weight + "kg, a żyje? " + isAlive;}
 
     @Override
     public void sell(Human seller, Human buyer, Double price)

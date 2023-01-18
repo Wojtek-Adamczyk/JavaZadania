@@ -21,10 +21,17 @@ public class Main
         dog.takeForAWalk();
         dog.feed();
 
+        System.out.println(kurak.getOwner());
+        System.out.println("Czy kurak jest posiadany? " + kurak.isOwned());
+
         Car car = new Car("Clio", "Renault", 1999,70, 700);
         Car car1 = new Car("Focus", "Ford", 2007,112, 19500);
 
         CarWash wash = new CarWash();
+        wash.washTheCar(car);
+
+        System.out.println("Porównaj 1 samochod: " + (car1 == car));
+        System.out.println("Porównaj 2 samochod: " + car.equals(car1));
 
         me.setCar(car);
         System.out.println(me.getCar());
@@ -33,28 +40,20 @@ public class Main
         me.setSalary(4100.0);
         me.getInformationAboutSalary();
 
-        Phone iPhone = new Phone("41a", "Samsung",2020,128,799);
-        me.phone = iPhone;
-
-        System.out.println("Porównaj 1 samochod: " + (car1 == car));
-        System.out.println("Porównaj 2 samochod: " + car.equals(car1));
+        Phone phone = new Phone("41a", "Samsung",2020,128,799);
+        me.phone = phone;
 
         System.out.println(car);
         System.out.println(me);
         System.out.println(dog);
-        System.out.println(iPhone);
+        System.out.println(phone);
 
         car.turnOn();
-        iPhone.turnOn();
+        phone.turnOn();
 
         Human buyer = new Human("Kacper", "Warda",1971,1000000.0);
         dog.sell(me, buyer, 6000.0);
         car.sell(me, buyer, 22000.0);
-        iPhone.sell(me, buyer, 420.0);
-
-        System.out.println(kurak.getOwner());
-        System.out.println("Czy kurak jest posiadany? " + kurak.isOwned());
-
-        wash.washTheCar(car);
+        phone.sell(me, buyer, 420.0);
     }
 }
